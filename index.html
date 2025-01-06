@@ -3,113 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Professional Webpage</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body{
-            background-color: aqua;
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
         }
-        .sub{
-            background-color: brown;
-        }
-        #submit{
-            background-color: blueviolet;
-        }
-        
 
+        form {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background: #0056b3;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-top: 20px;
+            animation: fadeIn 2s;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background: #007bff;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+
+        tr:hover {
+            background: #f1f1f1;
+            transition: background-color 0.3s;
+        }
+
+        /* Animation for table rows */
+        tbody tr {
+            animation: slideIn 1s ease-in-out;
+        }
+
+        /* Animation for headings */
+        h1, h2 {
+            color: #007bff;
+        }
+
+        /* Keyframes for fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Keyframes for slide-in animation */
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
     </style>
 </head>
-<body background="">
-    <link rel="stylesheet" href="style.css">
-    <h1 style="text-align: center;">Login</h1>
+<body>
     <form>
-        <label for="age">Age:</label>
-        <input type="number" id="age" min="5" max="10">
-        <label for="email">Email:</label>
-        <input type="email" id="email">
         <label for="us">Username:</label>
-        <input type="text" id="us" required>
-        <br><br>
+        <input type="text" id="us" name="username">
+        <br>
         <label for="ps">Password:</label>
-        <input type="password" id="ps" required>
-        <br><br>
-        <button type="submit" required>SUBMIT</button><br><br>
-        <label for="comment">leave a comment:</label><br>
-        <textarea id="comment" placeholder="your comment starts here...." rows="10" cols="40"></textarea>
+        <input type="password" id="ps" name="password">
         <br>
-        <br>
-        <select>
-            
-            <option>Narsimulu goud</option>
-            <option>Luyya Chandana</option>
-            <option>Ashivo Narsinghii</option>
-        </select>
-        <br>
-        <br>
-        <br>
-        <h2>Contact me</h2>
-        <label for="nm">Name:</label>
-        <input type="text" id="nm" placeholder="enter your name">
-        <br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" placeholder="enter your email">
-        <br>
-        <label>Choose your gender:</label><br>
-        <label for="gender">male</label>
-        <input type="radio" id="gender">
-        <label for="gender">female</label>
-        <input type="radio" id="gender">
-        <label for="gender">prefer not to say</label>
-        <input type="radio" id="gender">
+        <input type="submit" value="Submit">
     </form>
-    <br><br><br>
-    
-    <table border="1" style="border: blue;">
-        <tr>
-            <th rowspan="4">BC-B</th>
-            <th>Name</th>
-            <th>Age</th>
-        </tr>
 
+    <h1>My Projects</h1>
+    <table>
         <tr>
-            
-            <td>Surya</td>
-            <td>20</td>
+            <th>Project</th>
+            <th>Description</th>
         </tr>
         <tr>
-            
-            <td>laya</td>
-            <td>22</td>
+            <td>My Portfolio</td>
+            <td>I have built a portfolio website using HTML, CSS, and JavaScript.</td>
         </tr>
         <tr>
-            
-            <td>teja</td>
-            <td>21</td>
+            <td>Python Simple Calculator</td>
+            <td>I have built a simple calculator in the course by Code with Swaroop.</td>
         </tr>
     </table>
-    <br><br><br>
-    <header>
-        This is Header
-    </header>
-    <main>
-        <section>hi</section>
-        <article>hello</article>
-        <aside>ji</aside>
-    </main>
-    <footer>
-        <p>this is footer</p>
-    </footer>
-    <div>
-        <p>this is div container</p>
-    </div>
-    <span>
-        this is inline element
-    </span><br><br><br>
-    <button class="sub">submit</button>
-    <button class="sub">submit</button>
-    <button class="sub" id="submit">submit</button>
-    <button>reset</button>
-    <button>reset</button>
-    <button>reset</button>
-    <button style="border: blue;">reset</button>
+
+    <h1>Cascading Style Sheet</h1>
+    <h2>Hello</h2>
 </body>
 </html>
