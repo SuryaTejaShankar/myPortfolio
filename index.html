@@ -4,16 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        .sub{
+            background-color: brown;
+        }
+        #submit{
+            background-color: blueviolet;
+        }
+        
+
+    </style>
 </head>
-<body>
+<body background="">
+    <link rel="stylesheet" href="style.css">
+    <h1 style="text-align: center;">Login</h1>
     <form>
+        <label for="age">Age:</label>
+        <input type="number" id="age" min="5" max="10">
+        <label for="email">Email:</label>
+        <input type="email" id="email">
         <label for="us">Username:</label>
-        <input type="text" id="us">
+        <input type="text" id="us" required>
         <br><br>
         <label for="ps">Password:</label>
-        <input type="password" id="ps">
+        <input type="password" id="ps" required>
+        <br><br>
+        <button type="submit" required>SUBMIT</button><br><br>
+        <label for="comment">leave a comment:</label><br>
+        <textarea id="comment" placeholder="your comment starts here...." rows="10" cols="40"></textarea>
         <br>
-        <input type="submit">
+        <br>
+        <select>
+            
+            <option>Narsimulu goud</option>
+            <option>Luyya Chandana</option>
+            <option>Ashivo Narsinghii</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <h2>Contact me</h2>
+        <label for="nm">Name:</label>
+        <input type="text" id="nm" placeholder="enter your name">
+        <br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" placeholder="enter your email">
+        <br>
+        <label>Choose your gender:</label><br>
+        <label for="gender">male</label>
+        <input type="radio" id="gender">
+        <label for="gender">female</label>
+        <input type="radio" id="gender">
+        <label for="gender">prefer not to say</label>
+        <input type="radio" id="gender">
     </form>
+    <br><br><br>
+    
+    <table border="1" style="border: blue;">
+        <tr>
+            <th rowspan="4">BC-B</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+
+        <tr>
+            
+            <td>Surya</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            
+            <td>laya</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            
+            <td>teja</td>
+            <td>21</td>
+        </tr>
+    </table>
+    <br><br><br>
+    <header>
+        This is Header
+    </header>
+    <main>
+        <section>hi</section>
+        <article>hello</article>
+        <aside>ji</aside>
+    </main>
+    <footer>
+        <p>this is footer</p>
+    </footer>
+    <div>
+        <p>this is div container</p>
+    </div>
+    <span>
+        this is inline element
+    </span><br><br><br>
+    <button class="sub">submit</button>
+    <button class="sub">submit</button>
+    <button class="sub" id="submit">submit</button>
+    <button>reset</button>
+    <button>reset</button>
+    <button>reset</button>
+    <button style="border: blue;">reset</button>
 </body>
 </html>
