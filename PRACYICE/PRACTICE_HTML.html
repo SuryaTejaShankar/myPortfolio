@@ -3,43 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Professional Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        form {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background: #0056b3;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-top: 20px;
+            animation: fadeIn 2s;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background: #007bff;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+
+        tr:hover {
+            background: #f1f1f1;
+            transition: background-color 0.3s;
+        }
+
+        /* Animation for table rows */
+        tbody tr {
+            animation: slideIn 1s ease-in-out;
+        }
+
+        /* Animation for headings */
+        h1, h2 {
+            color: #007bff;
+        }
+
+        /* Keyframes for fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Keyframes for slide-in animation */
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
-    <link rel="stylesheet" href="style.css">
     <form>
         <label for="us">Username:</label>
-        <input type="text" id="us">
-        <br><br>
-        <label for="ps">Password:</label>
-        <input type="password" id="ps">
+        <input type="text" id="us" name="username">
         <br>
-        <input type="submit">
+        <label for="ps">Password:</label>
+        <input type="password" id="ps" name="password">
+        <br>
+        <input type="submit" value="Submit">
     </form>
-    <br><br>
-    <h1 style="color: blue;">My Projects</h1>
-    <table border="1">
+
+    <h1>My Projects</h1>
+    <table>
         <tr>
             <th>Project</th>
             <th>Description</th>
         </tr>
         <tr>
             <td>My Portfolio</td>
-            <td>I have built  portfolio website by using HTML, CSS and javascript</td>
+            <td>I have built a portfolio website using HTML, CSS, and JavaScript.</td>
         </tr>
         <tr>
             <td>Python Simple Calculator</td>
-            <td>I have built a simple  Calculator in the course by code with swaroop</td>
+            <td>I have built a simple calculator in the course by Code with Swaroop.</td>
         </tr>
     </table>
-    <br><br><br>
-    <h1>Cascading Style Sheet</h1>
-    <style>
-        h1{
-            color: aqua;
-        }
-    </style>
 
-    <h2>hello</h2>
+    <h1>Cascading Style Sheet</h1>
+    <h2>Hello</h2>
 </body>
 </html>
